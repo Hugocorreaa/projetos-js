@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  background-repeat: no-repeat;
+}
+
+#contador-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 100px;
+}
+
+#contador-container #counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+#contador-container #counter button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid lightcoral;
+  background-color: #f1d6d6;
+  color: lightcoral;
+  font-size: 16pt;
+  font-weight: 600;
+  text-align: center;
+}
+
+#contador-container #counter #currentNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  font-size: 16pt;
+}
+
+#to-dolist-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#to-dolist-container form {
+  margin-top: 30px;
+  background: white;
+}
+
+#to-dolist-container form input, #to-dolist-container form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+#to-dolist-container form button {
+  color: #d88771;
+  background: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#to-dolist-container form button:hover {
+  background: #d88771;
+  color: white;
+}
+
+#to-dolist-container .todo-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+#to-dolist-container .todo-container .todo-list {
+  width: 80%;
+  list-style: none;
+}
+
+#to-dolist-container .todo-container .todo-list .todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#to-dolist-container .todo-container .todo-list .todo.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#to-dolist-container .todo-container .todo-list .todo.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+#to-dolist-container .todo-container .todo-list .todo .todo-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+}
+
+#to-dolist-container .todo-container .todo-list .todo .trash-btn, #to-dolist-container .todo-container .todo-list .todo .complete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+}
+
+#to-dolist-container .todo-container .todo-list .todo .complete-btn {
+  background: #49cc4a;
+}
+
+#to-dolist-container .todo-container .todo-list .todo .fa-trash, #to-dolist-container .todo-container .todo-list .todo .fa-check {
+  pointer-events: none;
+}
+/*# sourceMappingURL=main.css.map */

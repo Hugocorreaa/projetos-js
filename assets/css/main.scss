@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    background-repeat: no-repeat;
+}
+
+
+#contador-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding-bottom: 100px;
+
+    #counter {
+        display: flex;
+        
+        
+        padding-top: 30px;
+
+        button {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 2px solid lightcoral;
+            background-color: rgb(241, 214, 214);
+            color: lightcoral;
+            font-size: 16pt;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #currentNumber {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            font-size: 16pt;
+        }
+    }
+
+
+}
+
+
+#to-dolist-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    form{
+        margin-top: 30px;
+        background: white;
+
+        input, button{
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: none;
+        }
+
+        button{
+            color: #d88771;
+            background: white;
+            transition: all 0.3s ease;
+
+            &:hover{
+                background: #d88771;
+                color: white;
+            }
+        }
+    }
+
+    .todo-container{
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 30px;
+
+        .todo-list{
+
+            width: 80%;
+            list-style: none;
+
+            .todo{
+                margin: 0.5rem;
+                background: white;
+                color: black;
+
+                display: flex;
+                justify-content: space-between;
+
+                transition: all 0.5s ease;
+
+                &.completed{
+                    text-decoration: line-through;
+                    opacity: 0.5;
+                }
+
+                &.fall{
+                    transform: translateY(8rem) rotateZ(20deg);
+                    opacity: 0;
+                }
+
+                .todo-item{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                .trash-btn, .complete-btn{
+                    background: #ff6f47;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem;
+                }
+
+                .complete-btn{
+                    background: rgb(73, 204,74);
+                }
+
+                .fa-trash, .fa-check{
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+}
