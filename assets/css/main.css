@@ -36,6 +36,45 @@ body {
   background-repeat: no-repeat;
 }
 
+header {
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 5%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+header nav p {
+  font-weight: 600;
+}
+
+header nav button {
+  border: none;
+  background-color: initial;
+}
+
+header nav button .fa-toggle-off, header nav button .fa-toggle-on {
+  font-size: 25px;
+}
+
+header nav #desligar {
+  display: none;
+}
+
 #contador-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +90,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 #contador-container #counter {
