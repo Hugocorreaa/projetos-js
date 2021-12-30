@@ -193,4 +193,63 @@ body {
 #to-dolist-container .todo-container .todo-list .todo .fa-trash, #to-dolist-container .todo-container .todo-list .todo .fa-check {
   pointer-events: none;
 }
+
+#consumo-api-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+#consumo-api-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+#consumo-api-container div h2 {
+  color: #ee7a5a;
+}
+
+#consumo-api-container div img {
+  max-width: 600px;
+  border-radius: 30px;
+}
+
+#consumo-api-container div button {
+  border: 0;
+  background: rgba(255, 68, 0, 0.658);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 20px 0;
+  padding: 16px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#consumo-api-container div button:hover {
+  background: rgba(255, 166, 0, 0.692);
+}
 /*# sourceMappingURL=main.css.map */
